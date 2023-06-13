@@ -1,0 +1,178 @@
+:root {
+  --dark-color: #263238;
+  --light-color: #8f95a5;
+}
+
+body {
+  font-family: poppins;
+  color: var(--light-color);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.menu {
+}
+
+.menu-navs {
+}
+
+.logo-start {
+  color: #000000;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.logo-end {
+  color: #939393;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.menu-nav {
+  color: var(--dark-color);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.header-button {
+  color: #000000;
+  letter-spacing: 0.03em;
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 20px 56px;
+  text-transform: capitalize;
+
+  border: 2px solid var(--dark-color);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.hero-title {
+  color: #000000;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+  text-transform: capitalize;
+}
+
+.hero-description {
+  font-size: 24px;
+}
+
+.hero-button {
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  padding: 23px 64px;
+
+  border-radius: 10px;
+  background-color: var(--dark-color);
+}
+
+.main-subtitile {
+  color: #000000;
+  font-weight: 600;
+  font-size: 48px;
+  text-transform: capitalize;
+}
+.skill-field {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+.skill-name {
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.skill-description {
+  font-size: 16px;
+}
+
+.skill-button {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 17px 63px;
+
+  border-radius: 10px;
+  background-color: var(--dark-color);
+}
+
+.about-description {
+  line-height: 1.8;
+}
+
+.about-amount {
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.amount-description {
+}
+
+.price-titile {
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.6;
+  text-transform: capitalize;
+}
+
+.price-description {
+}
+
+.price-field {
+  background: #eeeeee;
+  border-radius: 5px;
+}
+
+.price {
+  color: var(--dark-color);
+  font-size: 24px;
+}
+
+.period {
+  color: #546269;
+  font-size: 18px;
+}
+
+.contact-description {
+}
+
+.input {
+  border: 1px solid var(--light-color);
+  padding: 20px 30px;
+  border-radius: 10px;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.contact-button {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 56px;
+  letter-spacing: 0.03em;
+
+  border-radius: 10px;
+  background-color: var(--dark-color);
+}
+
+.footer-section {
+  border-top: 1px solid #c4c4c4;
+}
+
+.footer-details {
+  color: inherit;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+}
