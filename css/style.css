@@ -156,7 +156,7 @@ body {
   border: 2px solid var(--dark-color);
 }
 
-.main-subtitile {
+.main-subtitle {
   color: #000000;
   font-weight: 600;
   font-size: 48px;
@@ -255,7 +255,7 @@ body {
   margin-bottom: 180px;
 }
 
-.price-titile {
+.price-title {
   color: var(--dark-color);
   font-weight: 600;
   font-size: 30px;
@@ -419,6 +419,8 @@ body {
   .hero-section {
     flex-direction: column-reverse;
     margin-bottom: 53px;
+    text-align: center;
+    align-items: center;
   }
   .hero-image {
     width: 100%;
@@ -426,6 +428,7 @@ body {
   .hero-title {
     font-size: 24px;
     width: 220px;
+    display: inline-block;
   }
   .hero-description {
     font-size: 14px;
@@ -437,7 +440,7 @@ body {
     font-size: 16px;
     padding: 18px 99px;
   }
-  .main-subtitile {
+  .main-subtitle {
     font-size: 24px;
     margin-bottom: 32px;
   }
@@ -469,7 +472,7 @@ body {
   .carousel-wrapper {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     margin-top: 70px;
   }
   .carousel {
@@ -502,6 +505,11 @@ body {
     z-index: 100;
   }
   /* End of carousel */
+  .about-section {
+    margin-top: 0;
+    text-align: center;
+    align-items: center;
+  }
   .about-image {
     width: 283px;
     height: 283px;
@@ -518,9 +526,15 @@ body {
   }
   .s {
     flex-direction: column-reverse;
+    gap: 42px;
+    align-items: center;
   }
   .amount {
     flex-direction: column;
+    gap: 30px;
+  }
+  .pricing-section {
+    text-align: center;
   }
   .prices {
     flex-direction: column;
@@ -530,6 +544,7 @@ body {
   }
   .price-description {
     font-size: 13px;
+    width: 272px;
   }
   .price-field {
     width: 170px;
@@ -538,6 +553,7 @@ body {
   }
   .price {
     font-size: 18px;
+    align-items: center;
   }
   .period {
     font-size: 14px;
@@ -558,8 +574,9 @@ body {
   }
   .contact-input {
     font-size: 12px;
-    padding: 16px 0;
-    width: 100%;
+    padding: 16px 26px;
+    margin-right: 0;
+    
   }
   .contact-image {
     height: 228px;
@@ -568,7 +585,6 @@ body {
   .contact-button {
     font-size: 14px;
     padding: 20px 0;
-    width: 100%;
   }
   .footer-section {
     flex-direction: column;
