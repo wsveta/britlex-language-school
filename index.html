@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Britlex</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
@@ -28,6 +28,15 @@
           </ul>
         </nav>
         <button type="button" class="header-button">Let's talk</button>
+        <button
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="menu-toggle js-open-menu"
+        >
+          <svg width="33" height="19">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -43,12 +52,33 @@
             </p>
             <button type="button" class="hero-button">Get started</button>
           </div>
-          <img
-            src="./images/learning-languages.svg"
-            alt="Girl learning languages"
-            width="654"
-            height="510"
-          />
+          <picture>
+            <source
+              srcset="
+                ./images/learning-languages1.png   1x,
+                ./images/learning-languages1@2.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/learning-languages2.png   1x,
+                ./images/learning-languages2@2.png 2x
+              "
+              media="((min-width: 768px) and (max-width: 1299px))"
+            />
+            <source
+              srcset="
+                ./images/learning-languages3.png   1x,
+                ./images/learning-languages3@2.png 2x
+              "
+              media="(min-width: 1300px)"
+            />
+            <img
+              src="./images/learning-languages1.png"
+              alt="Girl learning languages"
+            />
+          </picture>
         </div>
       </section>
 
@@ -57,86 +87,169 @@
       <section class="skill-section">
         <div class="container">
           <h2 class="main-subtitile">Skills</h2>
-          <ul class="list skills">
-            <li class="skill-field">
-              <img
-                src="./images/shared-goals-bro.svg"
-                alt="Guys sharing goals"
-                width="390"
-                height="390"
-              />
-              <h3 class="skill-name">Speaking</h3>
-              <p class="skill-description">
-                Improve your English skills and confidence. Live classes and
-                interactive lessons online. 20 &#37; extra free for a limited
-                time only Learn English online and improve your skills through
-                our high-quality courses and resources - all designed for adult
-                language learners.
-              </p>
-              <button type="button" class="skill-button">Learn more</button>
-            </li>
-            <li>
-              <ul class="second list">
-                <li>
-                  <ul class="two list">
-                    <li class="skill-field">
-                      <img
-                        src="./images/typewriter-bro.svg"
-                        alt="Arms on a typewriting machine"
-                        width="390"
-                        height="264"
-                      />
-                      <h3 class="skill-name">Writing</h3>
-                      <p class="skill-description">
-                        One of the most important and extensive areas of natural
-                        science, the science that studies substances, also their
-                        composition
-                      </p>
-                      <button type="button" class="skill-button">
-                        Learn more
-                      </button>
-                    </li>
-                    <li class="skill-field">
-                      <img
-                        src="./images/house-bookshelves-bro.svg"
-                        alt="Man in a chair reading books near the bookshelf"
-                        width="390"
-                        height="264"
-                      />
-                      <h3 class="skill-name">Reading</h3>
-                      <p class="skill-description">
-                        Perception and response actions of the user resulting
-                        from the use and/or upcoming use of the product, system
-                        or service
-                      </p>
-                      <button type="button" class="skill-button">
-                        Learn more
-                      </button>
-                    </li>
-                  </ul>
-                </li>
-                <li class="skill-field last">
-                  <img
-                    src="./images/podcast-audience-bro.svg"
-                    alt="Two people running podcast"
-                    width="408"
-                    height="274"
+          <div class="carousel-wrapper">
+            <button type="button" data-action="left" class="left">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <div class="carousel skills">
+              <div class="skill-field">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/shared-goals1.png   1x,
+                      ./images/shared-goals1@2.png 2x
+                    "
+                    media="(max-width: 767px)"
                   />
-                  <div>
-                    <h3 class="skill-name">Listening</h3>
-                    <p class="skill-description">
-                      Here you can find activities to practise your listening
-                      skills. Listening will help you to improve your
-                      understanding
-                    </p>
-                    <button type="button" class="skill-button">
-                      Learn more
-                    </button>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
+                  <source
+                    srcset="
+                      ./images/shared-goals2.png   1x,
+                      ./images/shared-goals2@2.png 2x
+                    "
+                    media="((min-width: 768px) and (max-width: 1299px))"
+                  />
+                  <source
+                    srcset="
+                      ./images/shared-goals3.png   1x,
+                      ./images/shared-goals3@2.png 2x
+                    "
+                    media="(min-width: 1300px)"
+                  />
+                  <img
+                    src="./images/shared-goals1.png"
+                    alt="Guys sharing goals"
+                  />
+                </picture>
+
+                <h3 class="skill-name">Speaking</h3>
+                <p class="skill-description">
+                  Improve your English skills and confidence. Live classes and
+                  interactive lessons online. 20 &#37; extra free for a limited
+                  time only Learn English online and improve your skills through
+                  our high-quality courses and resources - all designed for
+                  adult language learners.
+                </p>
+                <button type="button" class="skill-button">Learn more</button>
+              </div>
+              <div class="skill-field">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/typewriter1.png   1x,
+                      ./images/typewriter1@2.png 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/typewriter2.png   1x,
+                      ./images/typewriter2@2.png 2x
+                    "
+                    media="((min-width: 768px) and (max-width: 1299px))"
+                  />
+                  <source
+                    srcset="
+                      ./images/typewriter3.png   1x,
+                      ./images/typewriter3@2.png 2x
+                    "
+                    media="(min-width: 1300px)"
+                  />
+                  <img
+                    src="./images/typewriter1.png"
+                    alt="Arms on a typewriting machine"
+                  />
+                </picture>
+                <h3 class="skill-name">Writing</h3>
+                <p class="skill-description">
+                  One of the most important and extensive areas of natural
+                  science, the science that studies substances, also their
+                  composition
+                </p>
+                <button type="button" class="skill-button">Learn more</button>
+              </div>
+              <div class="skill-field">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/house-bookshelves1.png   1x,
+                      ./images/house-bookshelves1@2.png 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/house-bookshelves2.png   1x,
+                      ./images/house-bookshelves2@2.png 2x
+                    "
+                    media="((min-width: 768px) and (max-width: 1299px))"
+                  />
+                  <source
+                    srcset="
+                      ./images/house-bookshelves3.png   1x,
+                      ./images/house-bookshelves3@2.png 2x
+                    "
+                    media="(min-width: 1300px)"
+                  />
+                  <img
+                    src="./images/house-bookshelves1.png"
+                    alt="Man in a chair reading books near the bookshelf"
+                  />
+                </picture>
+                <h3 class="skill-name">Reading</h3>
+                <p class="skill-description">
+                  Perception and response actions of the user resulting from the
+                  use and/or upcoming use of the product, system or service
+                </p>
+                <button type="button" class="skill-button">Learn more</button>
+              </div>
+              <div class="skill-field">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/podcast-audience1.png   1x,
+                      ./images/podcast-audience1@2.png 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/podcast-audience2.png   1x,
+                      ./images/podcast-audience2@2.png 2x
+                    "
+                    media="((min-width: 768px) and (max-width: 1299px))"
+                  />
+                  <source
+                    srcset="
+                      ./images/podcast-audience3.png   1x,
+                      ./images/podcast-audience3@2.png 2x
+                    "
+                    media="(min-width: 1300px)"
+                  />
+                  <img
+                    src="./images/podcast-audience1.png"
+                    alt="Two people running podcast"
+                  />
+                </picture>
+
+                <div>
+                  <h3 class="skill-name">Listening</h3>
+                  <p class="skill-description">
+                    Here you can find activities to practise your listening
+                    skills. Listening will help you to improve your
+                    understanding
+                  </p>
+                  <button type="button" class="skill-button">Learn more</button>
+                </div>
+              </div>
+            </div>
+            <button type="button" data-action="right" class="right">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -144,36 +257,59 @@
 
       <section>
         <div class="container about-section">
-          <img
-            src="./images/business-competition-bro.svg"
-            alt="Man on a top of a mountain"
-            width="540"
-            height="540"
-          />
-          <div>
-            <h2 class="main-subtitile">About us</h2>
-            <p class="about-description">
-              The model offers a framework for discussing problems related to
-              the user's experience, as well as possible ways and means of
-              solving them. Application development begins at the top level
-              (strategy), where the future software product is described quite
-              abstractly from the point of view of the expectations of both
-              users and the customer.
-            </p>
-            <ul class="list amount">
-              <li>
-                <span class="about-amount">800</span>
-                <p class="amount-description">Pupils</p>
-              </li>
-              <li>
-                <span class="about-amount">18</span>
-                <p class="amount-description">Teachers</p>
-              </li>
-              <li>
-                <span class="about-amount">6</span>
-                <p class="amount-description">Foreign languages</p>
-              </li>
-            </ul>
+          <h2 class="main-subtitile">About us</h2>
+          <div class="s">
+            <div>
+              <p class="about-description">
+                The model offers a framework for discussing problems related to
+                the user's experience, as well as possible ways and means of
+                solving them. Application development begins at the top level
+                (strategy), where the future software product is described quite
+                abstractly from the point of view of the expectations of both
+                users and the customer.
+              </p>
+              <ul class="list amount">
+                <li>
+                  <span class="about-amount">800</span>
+                  <p class="amount-description">Pupils</p>
+                </li>
+                <li>
+                  <span class="about-amount">18</span>
+                  <p class="amount-description">Teachers</p>
+                </li>
+                <li>
+                  <span class="about-amount">6</span>
+                  <p class="amount-description">Foreign languages</p>
+                </li>
+              </ul>
+            </div>
+            <picture>
+              <source
+                srcset="
+                  ./images/business-competition1.png   1x,
+                  ./images/business-competition1@2.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="
+                  ./images/business-competition2.png   1x,
+                  ./images/business-competition2@2.png 2x
+                "
+                media="((min-width: 768px) and (max-width: 1299px))"
+              />
+              <source
+                srcset="
+                  ./images/business-competition3.png   1x,
+                  ./images/business-competition3@2.png 2x
+                "
+                media="(min-width: 1300px)"
+              />
+              <img
+                src="./images/business-competition1.png"
+                alt="Man on a top of a mountain"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -185,12 +321,21 @@
           <h2 class="main-subtitile">Pricing</h2>
           <ul class="list prices">
             <li class="price">
-              <img
-                src="./images/online.png"
-                alt="Girl passing online test"
-                width="426"
-                height="320"
-              />
+              <picture>
+                <source
+                  srcset="./images/online1.png 1x, ./images/online1@2.png 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/online2.png 1x, ./images/online2@2.png 2x"
+                  media="((min-width: 768px) and (max-width: 1299px))"
+                />
+                <source
+                  srcset="./images/online3.png 1x, ./images/online3@2.png 2x"
+                  media="(min-width: 1300px)"
+                />
+                <img src="./images/online1.png" alt="Girl on a lesson" />
+              </picture>
               <h3 class="price-titile">Self-study online course</h3>
               <p class="price-description">
                 Start learning English online in live classes with qualified EC
@@ -202,12 +347,21 @@
               </div>
             </li>
             <li class="price">
-              <img
-                src="./images/lesson.png"
-                alt="Man on a live lesson"
-                width="426"
-                height="320"
-              />
+              <picture>
+                <source
+                  srcset="./images/lesson1.png 1x, ./images/lesson1@2.png 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/lesson2.png 1x, ./images/lesson2@2.png 2x"
+                  media="((min-width: 768px) and (max-width: 1299px))"
+                />
+                <source
+                  srcset="./images/lesson3.png 1x, ./images/lesson3@2.png 2x"
+                  media="(min-width: 1300px)"
+                />
+                <img src="./images/lesson1.png" alt="Girl on a lesson" />
+              </picture>
               <h3 class="price-titile">Live online classes</h3>
               <p class="price-description">
                 Interactive group classes with expert teachers. Free 7-day trial
@@ -218,12 +372,21 @@
               </div>
             </li>
             <li class="price">
-              <img
-                src="./images/webinar.png"
-                alt="Girls listen to webinar"
-                width="426"
-                height="320"
-              />
+              <picture>
+                <source
+                  srcset="./images/webinar1.png 1x, ./images/webinar1@2.png 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/webinar2.png 1x, ./images/webinar2@2.png 2x"
+                  media="((min-width: 768px) and (max-width: 1299px))"
+                />
+                <source
+                  srcset="./images/webinar3.png 1x, ./images/webinar3@2.png 2x"
+                  media="(min-width: 1300px)"
+                />
+                <img src="./images/webinar1.png" alt="Girl on a webinar" />
+              </picture>
               <h3 class="price-titile">Personal Tuition</h3>
               <p class="price-description">
                 Online one-to-one English tutoring - enjoy our first session for
@@ -242,12 +405,21 @@
 
       <section>
         <div class="container contact-section">
-          <img
-            src="./images/contact.png"
-            alt="Girl lunch a paper plane"
-            width="425"
-            height="430"
-          />
+          <picture>
+            <source
+              srcset="./images/unnamed1.png 1x, ./images/unnamed1@2.png 2x"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="./images/unnamed2.png 1x, ./images/unnamed2@2.png 2x"
+              media="((min-width: 768px) and (max-width: 1299px))"
+            />
+            <source
+              srcset="./images/unnamed3.png 1x, ./images/unnamed3@2.png 2x"
+              media="(min-width: 1300px)"
+            />
+            <img src="./images/unnamed1.png" alt="Girl lunch a paper plane" />
+          </picture>
           <div>
             <h2 class="main-subtitile">Contact us</h2>
             <p class="contact-description">
@@ -255,10 +427,10 @@
               English test. Sign up to our newsletter for learning tips and free
               resources
             </p>
-            <form>
+            <form class="form-input">
               <input
-                class="input"
-                type="text"
+                class="contact-input"
+                type="tel"
                 placeholder="Enter your e-mail"
               /><button class="contact-button" type="submit">Subscribe</button>
             </form>
@@ -283,5 +455,32 @@
         </ul>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="js-close-menu close-button mobile-close-button">
+        <svg width="34" height="34">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-nav">
+          <a href="./index.html" class="link">Home</a>
+        </li>
+        <li class="mobile-menu-nav">
+          <a href="./index.html" class="link">Skills</a>
+        </li>
+        <li class="mobile-menu-nav">
+          <a href="./index.html" class="link">About Us</a>
+        </li>
+        <li class="mobile-menu-nav">
+          <a href="./index.html" class="link">Pricing</a>
+        </li>
+        <li class="mobile-menu-nav">
+          <a href="./index.html" class="link">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <script defer src=".js/mobile-menu.js"></script>
+    <script defer src="./js/carousel.js"></script>
   </body>
 </html>
